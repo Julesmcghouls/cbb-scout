@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Basketball Recruit</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">College Recruit</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#search">Explore Colleges</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profiles">College Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog/Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4">Find Your Perfect College Basketball Program</h1>
+      <p class="lead">Explore colleges, compare stats, and take your game to the next level.</p>
+      <a href="#search" class="btn btn-primary">Start Exploring Colleges Today!</a>
+    </div>
+  </section>
+
+  <!-- College Search Section -->
+<section id="search" class="container my-5">
+  <h2 class="text-center">Explore Colleges</h2>
+  <form id="searchForm" class="my-4">
+    <div class="row mb-3">
+      <div class="col">
+        <input type="text" id="collegeName" class="form-control" placeholder="Search by College Name" />
+      </div>
+      <div class="col">
+        <select id="division" class="form-control">
+          <option value="">Select Division</option>
+          <option value="Division I">Division I</option>
+          <option value="Division II">Division II</option>
+          <option value="Division III">Division III</option>
+        </select>
+      </div>
+      <div class="col">
+        <button type="submit" class="btn btn-primary w-100">Search</button>
+      </div>
+    </div>
+  </form>
+  <div id="results"></div>
+</section>
+
+
+  <script src="/src/app.js"></script>
+</body>
+</html>

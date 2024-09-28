@@ -1,0 +1,13 @@
+/* Hero Section */
+.hero {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+.hero .container {
+  max-width: 600px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
